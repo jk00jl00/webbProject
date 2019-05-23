@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h2= 'This is a ' 
+    input(type="text", id="class" value="")
+    br 
+    canvas(id="guess_canvas" width="500px" height="500px")
+    button(type="submit" id="submitButton") submit
+
+    input(type="hidden", id="imdata", value="" + data)
+    input(type="hidden", id="imid", value="" + imagetag)
+
+    a(href="/") Back
