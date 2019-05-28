@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    h2= 'draw a ' + imagetag 
+    h1= 'draw a ' + imagetag 
     input(type="hidden", id="class" value="" + imagetag) 
     canvas(id="drawing_canvas" width="500px" height="500px")
     button(type="submit" id="submitButton") submit
